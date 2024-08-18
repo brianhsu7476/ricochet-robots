@@ -1,4 +1,6 @@
 var ww=window.innerWidth, wh=window.innerHeight;
 var a=document.getElementsByClassName('bton');
-for(var i=0; i<a.length; ++i)a[i].style.width=a[i].style.height=Math.min(ww/6, wh/6), a[i].style.fontSize=Math.min(ww/45, wh/50);
-document.querySelector('#board').style.fontSize=Math.min(ww/45, wh/50);
+var btonSize=Math.min(ww/6, wh/6), bdSize=Math.min(ww/45, wh/50);
+if(ww<=800)bdSize*=0.9;
+for(var i=0; i<a.length; ++i)a[i].style.width=a[i].style.height=btonSize, a[i].style.fontSize=bdSize;
+document.querySelector('#board').style.fontSize=bdSize;
