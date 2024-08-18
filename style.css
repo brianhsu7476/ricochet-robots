@@ -1,9 +1,23 @@
 html, body{
 	height: 100%;
 	margin: 0;
+	background-color: black;
 }
   
 canvas{
 	width: 99.99%;
 	height: 99.99%;
+}
+
+#board, .bton{
+	color: white;
+	font-family: monospace;
+	white-space: pre;
+}
+
+.bton{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-color: white;
 }
