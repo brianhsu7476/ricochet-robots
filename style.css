@@ -34,8 +34,15 @@ canvas{
 }
 
 .bton{
-	width: 300px;
-	height: 300px;
 	background-color: black;
 	border-color: white;
+}
+
+/* iPhone, portrait & landscape. */
+@media all and (max-device-width: 480px) {
+	html,body { -webkit-text-size-adjust:none; }
+}
+/* iPad, portrait & landscape. */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+	html,body { -webkit-text-size-adjust:none; }
 }
